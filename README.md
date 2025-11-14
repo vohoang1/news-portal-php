@@ -2,8 +2,6 @@
 📰 A simple, responsive news website built with PHP and MySQL — perfect for learning, portfolio, or academic projects. 
 # 📰 News Portal – Trang Tin Tức PHP
 
-![Giao diện trang chủ](image.png)
-
 Một trang web tin tức đơn giản, hiện đại, được xây dựng bằng **PHP thuần** và **MySQL**, với giao diện responsive — phù hợp cho sinh viên công nghệ làm **đồ án học phần, portfolio cá nhân** hoặc luyện tập kỹ năng fullstack cơ bản.
 
 ---
