@@ -1,148 +1,220 @@
-# news-portal-php
-📰 A simple, responsive news website built with PHP and MySQL — perfect for learning, portfolio, or academic projects. 
-# 📰 News Portal – Trang Tin Tức PHP
+# Hướng dẫn sử dụng Website Tin tức - Phiên bản nâng cao
 
-Một trang web tin tức đơn giản, hiện đại, được xây dựng bằng **PHP thuần** và **MySQL**, với giao diện responsive — phù hợp cho sinh viên công nghệ làm **đồ án học phần, portfolio cá nhân** hoặc luyện tập kỹ năng fullstack cơ bản.
+## 🎉 Tính năng đã hoàn thành
 
----
+### 1. **Tìm kiếm nâng cao** (`search.php`)
+- Tìm kiếm theo từ khóa trong tiêu đề, nội dung và mô tả
+- Lọc theo danh mục
+- Sắp xếp theo mới nhất hoặc xem nhiều nhất
+- Phân trang kết quả tìm kiếm
+- Hiển thị số lượng kết quả
 
-## 🌟 Tính năng
+### 2. **Trang chi tiết tin tức** (`single.php`) ⭐ MỚI
+- Hiển thị đầy đủ nội dung tin tức
+- Breadcrumb navigation
+- Tự động tăng lượt xem
+- Nút chia sẻ lên Facebook, Twitter
+- Nút in bài viết
+- Tin tức liên quan (cùng danh mục)
+- Sidebar xem nhiều nhất
+- Sidebar tin mới nhất
 
-- Giao diện **responsive**, hiển thị đẹp trên điện thoại & máy tính.
-- Hiển thị tin theo **danh mục** (Thời sự, Thế giới, Khoa học, Giải trí, Thể thao, Quân sự…).
-- Bài viết có **ảnh minh họa, tiêu đề, mô tả ngắn, ngày đăng**.
-- Thanh điều hướng rõ ràng + thanh tìm kiếm + cột mạng xã hội.
-- Kết nối cơ sở dữ liệu qua `mysqli` (PHP).
-- Cấu trúc code rõ ràng: tách biệt header, footer, kết nối DB.
+### 3. **AJAX Tìm kiếm tự động** (`ajax-search.php`) ⭐ MỚI
+- Autocomplete khi gõ từ khóa (tối thiểu 2 ký tự)
+- Hiển thị gợi ý với hình ảnh, tiêu đề, danh mục
+- Click vào gợi ý để chuyển đến trang chi tiết
 
----
+### 4. **Print-friendly version** (`print.php`) ⭐ MỚI
+- Trang in tối ưu cho bài viết
+- CSS riêng cho in ấn
+- Nút in và đóng
 
-## 🛠 Công nghệ sử dụng
+### 5. **Tất cả tin tức** (`all-news.php`)
+- Hiển thị tất cả tin tức với phân trang
+- Sắp xếp theo mới nhất hoặc xem nhiều nhất
+- Layout 3 cột responsive
+- Links đến trang chi tiết
 
-- **Backend**: PHP 7.4+
-- **Database**: MySQL
-- **Frontend**: HTML5, CSS3, Bootstrap 4 (nếu có), JavaScript cơ bản
-- **Môi trường**: WAMP / XAMPP (localhost)
+### 6. **Trang danh mục** (`archive.php`)
+- Hiển thị tin tức theo danh mục
+- Phân trang Bootstrap 4
+- Links đến trang chi tiết
+- Thống kê số lượng
 
----
+### 7. **Trang kết quả tìm kiếm** (`result.php`)
+- Tìm kiếm cơ bản từ header
+- Phân trang
+- Links đến trang chi tiết
 
-## 🗂 Cấu trúc dự án
-news-demo/
-├── index.php # Trang chủ
-├── header.php # Phần đầu trang
-├── footer.php # Phần chân trang
-├── models/
-│ └── db.php # Kết nối CSDL (database: be1)
-├── single.php # Chi tiết bài viết
-├── category.php # Tin theo danh mục
-└── assets/ # Hình ảnh, CSS, JS
+### 8. **Advanced Features** ⭐ MỚI
+- Scroll to top button (hiện khi scroll xuống)
+- Hiệu ứng hover cho các elements
+- CSS tối ưu cho in ấn
+- Animations mượt mà
 
-
----
-
-## ⚙️ Hướng dẫn cài đặt
-
-1. **Clone hoặc tải mã nguồn** về thư mục `www` (WAMP) hoặc `htdocs` (XAMPP).
-2. **Tạo database** tên `be1` trong phpMyAdmin.
-   ```sql
-   CREATE DATABASE be1 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-
-   Tuyệt! Dưới đây là nội dung đầy đủ cho file **`README.md`** — đã được **tối ưu cho GitHub**, kết hợp cả hình ảnh bạn đã upload, mô tả rõ ràng, và phù hợp với một dự án học tập bằng PHP như của bạn:
-
----
-
-```markdown
-# 📰 News Portal – Trang Tin Tức PHP
-
-![Giao diện trang chủ](image.png)
-
-Một trang web tin tức đơn giản, hiện đại, được xây dựng bằng **PHP thuần** và **MySQL**, với giao diện responsive — phù hợp cho sinh viên công nghệ làm **đồ án học phần, portfolio cá nhân** hoặc luyện tập kỹ năng fullstack cơ bản.
-
----
-
-## 🌟 Tính năng
-
-- Giao diện **responsive**, hiển thị đẹp trên điện thoại & máy tính.
-- Hiển thị tin theo **danh mục** (Thời sự, Thế giới, Khoa học, Giải trí, Thể thao, Quân sự…).
-- Bài viết có **ảnh minh họa, tiêu đề, mô tả ngắn, ngày đăng**.
-- Thanh điều hướng rõ ràng + thanh tìm kiếm + cột mạng xã hội.
-- Kết nối cơ sở dữ liệu qua `mysqli` (PHP).
-- Cấu trúc code rõ ràng: tách biệt header, footer, kết nối DB.
-
----
-
-## 🛠 Công nghệ sử dụng
-
-- **Backend**: PHP 7.4+
-- **Database**: MySQL
-- **Frontend**: HTML5, CSS3, Bootstrap 4 (nếu có), JavaScript cơ bản
-- **Môi trường**: WAMP / XAMPP (localhost)
-
----
-
-## 🗂 Cấu trúc dự án
+## 📁 Cấu trúc file
 
 ```
 news-demo/
-├── index.php          # Trang chủ
-├── header.php         # Phần đầu trang
-├── footer.php         # Phần chân trang
+├── single.php              # Trang chi tiết tin tức (MỚI)
+├── ajax-search.php         # API AJAX search (MỚI)
+├── print.php               # Trang in bài viết (MỚI)
+├── advanced-features.php   # CSS & JS nâng cao (MỚI)
+├── search.php              # Tìm kiếm nâng cao
+├── all-news.php            # Tất cả tin tức
+├── archive.php             # Trang danh mục
+├── result.php              # Kết quả tìm kiếm
 ├── models/
-│   └── db.php         # Kết nối CSDL (database: be1)
-├── single.php         # Chi tiết bài viết
-├── category.php       # Tin theo danh mục
-└── assets/            # Hình ảnh, CSS, JS
+│   ├── item.php            # Model Item (đã nâng cấp)
+│   └── category.php        # Model Category (đã nâng cấp)
+├── header.php              # Header (đã cập nhật menu)
+└── footer.php              # Footer (đã tích hợp advanced features)
 ```
 
----
+## 🔧 Model đã nâng cấp
 
-## ⚙️ Hướng dẫn cài đặt
+### Model `Item` (`models/item.php`)
+**Phương thức mới:**
+- `getItemById($id)` - Lấy tin tức theo ID
+- `increaseViews($id)` - Tăng lượt xem
+- `getRelatedItems($category_id, $current_id, $limit)` - Lấy tin liên quan
+- `getMostViewedItems($limit)` - Lấy tin xem nhiều nhất
+- `getLatestItems($limit)` - Lấy tin mới nhất
+- `searchAdvanced()` - Tìm kiếm nâng cao
+- `searchCountAdvanced()` - Đếm kết quả nâng cao
+- `getItemsWithPagination()` - Lấy tin với phân trang
+- `getTotalItems()` - Đếm tổng số tin
+- `paginate()` - Phân trang Bootstrap 4 cải tiến
 
-1. **Clone hoặc tải mã nguồn** về thư mục `www` (WAMP) hoặc `htdocs` (XAMPP).
-2. **Tạo database** tên `be1` trong phpMyAdmin.
-   ```sql
-   CREATE DATABASE be1 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-   ```
-3. **Tạo bảng và chèn dữ liệu mẫu** (nếu có file `.sql`, hãy import).
-4. **Kiểm tra lại kết nối** trong `models/db.php`:
-   ```php
-   new mysqli('localhost', 'root', '', 'be1', 3306);
-   ```
-5. **Bật Apache + MySQL**, truy cập:
-   ```
-   http://localhost/news-demo
-   ```
+### Model `Category` (`models/category.php`)
+**Phương thức mới:**
+- `getCateById($id)` - Lấy thông tin danh mục theo ID
 
-> 💡 Lưu ý: Tên thư mục trên server phải khớp với đường dẫn bạn truy cập.
+## 🚀 Hướng dẫn sử dụng
 
----
+### 1. Cài đặt
+```bash
+# Import database
+1. Mở phpMyAdmin
+2. Tạo database tên 'news'
+3. Import file news.sql
 
-## 🎓 Mục đích
-
-- Đồ án học phần **Lập trình Web** – ngành Công nghệ Thông tin.
-- Rèn luyện kỹ năng PHP, thao tác với MySQL, thiết kế giao diện người dùng.
-- Làm nền tảng để mở rộng (thêm đăng nhập, bình luận, quản trị…).
-
----
-
-## 📄 Giấy phép
-
-MIT License – Tự do sử dụng và chỉnh sửa cho mục đích học tập.
-
----
-
-> 🔧 Dự án này **không sử dụng framework**, phù hợp để hiểu rõ luồng hoạt động cơ bản của website động với PHP & MySQL.
+# Cấu hình
+1. Mở config.php
+2. Kiểm tra thông tin kết nối database
 ```
 
+### 2. Chạy website
+```bash
+1. Khởi động XAMPP (Apache + MySQL)
+2. Truy cập: http://localhost/news-demo
+```
+
+### 3. Sử dụng tính năng
+
+**Tìm kiếm AJAX:**
+- Gõ từ khóa vào ô tìm kiếm ở header
+- Chờ gợi ý hiện ra (sau 2 ký tự)
+- Click vào gợi ý để xem chi tiết
+
+**Xem chi tiết tin tức:**
+- Click vào tiêu đề bất kỳ tin tức nào
+- Xem đầy đủ nội dung
+- Chia sẻ lên mạng xã hội
+- In bài viết
+- Xem tin liên quan
+
+**Tìm kiếm nâng cao:**
+- Vào menu "Tìm kiếm nâng cao"
+- Nhập từ khóa, chọn danh mục, sắp xếp
+- Xem kết quả với phân trang
+
+## 🎨 Tính năng UI/UX
+
+### Phân trang
+- Bootstrap 4 pagination
+- Hiển thị: Trước | 1 2 3 ... | Sau
+- Trang hiện tại được highlight
+- Responsive trên mobile
+
+### AJAX Search
+- Autocomplete real-time
+- Hiển thị hình ảnh thumbnail
+- Thông tin danh mục và ngày đăng
+- Số lượt xem
+
+### Scroll to Top
+- Nút tròn màu xanh
+- Hiện khi scroll > 300px
+- Smooth scroll animation
+- Fixed position
+
+### Print Styles
+- CSS riêng cho in ấn
+- Ẩn các element không cần thiết
+- Font size tối ưu
+- Page break control
+
+## 📊 Thống kê
+
+- **Tổng số trang:** 8 trang
+- **Tổng số phương thức mới:** 11 phương thức
+- **Dòng code thêm mới:** ~1000+ dòng
+- **Tính năng nâng cao:** 8 tính năng
+
+## 🔒 Bảo mật
+
+- ✅ Prepared Statements (SQL Injection protection)
+- ✅ HTML Escaping (XSS protection)
+- ✅ URL Encoding
+- ✅ Input validation
+
+## 🌐 Tương thích
+
+- ✅ Desktop (Chrome, Firefox, Edge, Safari)
+- ✅ Tablet
+- ✅ Mobile
+- ✅ Print
+
+## 💡 Gợi ý phát triển tiếp
+
+1. **Comments System** - Hệ thống bình luận
+2. **User Authentication** - Đăng nhập/đăng ký
+3. **Admin Panel** - Quản trị nội dung
+4. **Rich Text Editor** - Soạn thảo nội dung
+5. **Image Upload** - Upload ảnh
+6. **Tags System** - Hệ thống tags
+7. **RSS Feed** - RSS feed
+8. **Email Subscription** - Đăng ký nhận tin
+9. **Social Login** - Đăng nhập bằng Facebook/Google
+10. **Analytics** - Thống kê truy cập
+
+## 🐛 Troubleshooting
+
+**Lỗi AJAX không hoạt động:**
+- Kiểm tra jQuery đã load chưa
+- Kiểm tra đường dẫn ajax-search.php
+- Xem Console log
+
+**Lỗi phân trang:**
+- Kiểm tra tham số page trong URL
+- Kiểm tra hàm paginate()
+
+**Lỗi không tăng lượt xem:**
+- Kiểm tra quyền UPDATE trong database
+- Kiểm tra hàm increaseViews()
+
+## 📞 Hỗ trợ
+
+Nếu gặp vấn đề, kiểm tra:
+1. XAMPP đã khởi động chưa
+2. Database đã import đúng chưa
+3. File config.php có đúng thông tin kết nối không
+4. Đường dẫn ảnh trong thư mục `img/` có tồn tại không
+5. Console log có lỗi JavaScript không
+
 ---
 
-### ✅ Cách dùng:
-1. Tạo file `README.md` trong thư mục gốc của dự án (`news-demo/`).
-2. Dán toàn bộ nội dung trên vào.
-3. Đảm bảo file `image.png` nằm cùng thư mục với `README.md` → GitHub sẽ tự hiển thị hình ảnh.
-
-> 💡 Nếu bạn đổi tên ảnh thành `screenshot.png` hoặc `preview.jpg`, nhớ sửa dòng `![Giao diện trang chủ](image.png)` cho khớp.
-
----
-
-Bạn cần mình xuất ra file `.md` thật để tải về, hay thêm phần **"Demo video"**, **"Cách mở rộng tính năng"**, hoặc **"Lỗi thường gặp"** không? Mình sẵn sàng hỗ trợ! 😊
+**Phiên bản:** 2.0 (Advanced Features)  
+**Ngày cập nhật:** <?php echo date('d/m/Y'); ?>  
+**Tác giả:** Your Name
