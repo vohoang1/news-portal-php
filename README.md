@@ -217,4 +217,4 @@ Nếu gặp vấn đề, kiểm tra:
 
 **Phiên bản:** 2.0 (Advanced Features)  
 **Ngày cập nhật:** <?php echo date('d/m/Y'); ?>  
-**Tác giả:** Your Name
+**Tác giả:** Hoàng
